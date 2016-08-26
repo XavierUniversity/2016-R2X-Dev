@@ -1985,7 +1985,7 @@ label.error {
 
 /*** MEDIA QUERIES ***/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1920px) {
 		  
 		  /* general */
 		  .mainwrapper { overflow: hidden; }

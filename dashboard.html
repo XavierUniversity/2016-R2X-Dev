@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+<link rel="shortcut icon" href="favicon.ico" />
+
 <title>Road to Xavier - Dashboard</title>
 
 <link rel="stylesheet" href="css/style.default.css" />
@@ -43,9 +45,9 @@
 <div id="mainwrapper" class="mainwrapper">
     
     <div class="header">
-        <div class="logo">
+        <!--<div class="logo">
             <a href="dashboard.html"><img src="images/logo.svg" alt="The Road to Xavier" /></a>
-        </div>
+        </div>-->
         <div class="headerinner">
             <ul class="headmenu">
                 <li class="odd">
@@ -129,10 +131,10 @@
                     <div class="userloggedinfo">
                         <img src="images/photos/thumb1.png" alt="" />
                         <div class="userinfo">
-                            <h5>Juan Dela Cruz <small>- juan@themepixels.com</small></h5>
+                            <h5>Kristyn Hopson <small>- kristyn@hopson.com</small></h5>
                             <ul>
-                                <li><a href="editprofile.html">Edit Profile</a></li>
-                                <li><a href="">Account Settings</a></li>
+                                <li><a href="editprofile.html">Your Profile</a></li>
+                                <li><a href="">Your Xavier Account</a></li>
                                 <li><a href="index.html">Sign Out</a></li>
                             </ul>
                         </div>
@@ -213,7 +215,7 @@
         
         <ul class="breadcrumbs">
             <li><a href="dashboard.html"><i class="iconfa-home"></i></a> <span class="separator"></span></li>
-            <li>Dashboard</li>
+            <li>Home</li>
            <!-- <li class="right">
                     <a href="" data-toggle="dropdown" class="dropdown-toggle"><i class="icon-tint"></i> Color Skins</a>
                     <ul class="dropdown-menu pull-right skin-color">
@@ -231,10 +233,10 @@
             <form action="results.html" method="post" class="searchbar">
                 <input type="text" name="keyword" placeholder="To search type and hit enter..." />
             </form>
-            <div class="pageicon"><span class="iconfa-laptop"></span></div>
+            <div class="pageicon"><span class="iconfa-circle-arrow-right"></span></div>
             <div class="pagetitle">
-                <h5>All Features Summary</h5>
-                <h1>Dashboard</h1>
+                <h5>Hello, Kristyn</h5>
+                <h1>The Road to Xavier</h1>
             </div>
         </div><!--pageheader-->
         
@@ -269,6 +271,12 @@
                                     <span class="shortcuts-label">Help</span>
                                 </a>
                             </li>
+                            <li class="help">
+                                <a href="">
+                                    <span class="shortcuts-icon iconsi-help"></span>
+                                    <span class="shortcuts-label">Help</span>
+                                </a>
+                            </li>
                             <li class="last images">
                                 <a href="">
                                     <span class="shortcuts-icon iconsi-images"></span>
@@ -280,15 +288,15 @@
                         <br />
                         
 
-                        <h5 class="subtitle">Daily Statistics</h5><br />
+                        <!--<h5 class="subtitle">Daily Statistics</h5><br />
                         <div id="chartplace" style="height:300px;"></div>
                         
                         <div class="divider30"></div>
                         
                                                
-                        <br />
+                        <br />-->
                         
-                        <h4 class="widgettitle"><span class="glyphicon glyphicon-comment glyphicon-white"></span> Recent Comments</h4>
+                        <h4 class="widgettitle"><span class="glyphicon glyphicon-comment glyphicon-white"></span> Recent Activity</h4>
                         <div class="widgetcontent nopadding">
                             <ul class="commentlist">
                                 <li>
@@ -338,12 +346,12 @@
                     
                     <div id="dashboard-right" class="col-md-4">
                         
-                        <h5 class="subtitle">Announcements</h5>
+                        <h5 class="subtitle">Your Next Step</h5>
                         
                         <div class="divider15"></div>
                         
                         <div class="alert alert-block">
-                              <button data-dismiss="alert" class="close" type="button">&times;</button>
+                              <!--<button data-dismiss="alert" class="close" type="button">&times;</button>-->
                               <h4><span class="iconfa-exclamation-sign"></span> Complete the Transition to College Survey</h4>
                               <p style="margin: 8px 0">Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna.</p>
                         </div><!--alert-->
@@ -373,7 +381,7 @@
                         </div><!--widgetcontent-->
                         </div><!--widgetbox-->
                         
-                        <h4 class="widgettitle">Event Calendar</h4>
+                        <h4 class="widgettitle">Xavier Calendar</h4>
                         <div class="widgetcontent nopadding">
                             <div id="datepicker"></div>
                         </div>
@@ -549,10 +557,10 @@
 <script type="text/javascript">
     jQuery(document).ready(function() {
         
-      // simple chart
+      /* simple chart
 		var flash = [[0, 11], [1, 9], [2,12], [3, 8], [4, 7], [5, 3], [6, 1]];
 		var html5 = [[0, 5], [1, 4], [2,4], [3, 1], [4, 9], [5, 10], [6, 13]];
-      var css3 = [[0, 6], [1, 1], [2,9], [3, 12], [4, 10], [5, 12], [6, 11]];
+       var css3 = [[0, 6], [1, 1], [2,9], [3, 12], [4, 10], [5, 12], [6, 11]];
 			
 		function showTooltip(x, y, contents) {
 			jQuery('<div id="tooltip" class="tooltipflot">' + contents + '</div>').css( {
@@ -607,7 +615,7 @@
 				plot.highlight(item.series, item.datapoint);
 			}
 		});
-    
+    	*/
         
         //datepicker
         jQuery('#datepicker').datepicker();
