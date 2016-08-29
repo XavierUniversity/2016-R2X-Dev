@@ -25,10 +25,10 @@ jQuery(document).ready(function(){
 	
 	
    // add menu bar for phones and tablet
-   jQuery('<div class="topbar"><a class="barmenu">'+
-		    '</a><div class="chatmenu"></a></div>').insertBefore('.mainwrapper');
+   jQuery('<div class="topbar"><div class="show-nav"><a id="nav-icon" href="#"><span></span><span></span><span></span><span></span></a></div>'+
+		    '<div class="chatmenu"></a></div>').insertBefore('.mainwrapper');
 	
-	jQuery('.topbar .barmenu').click(function() {
+	jQuery('.topbar .barmenu, #nav-icon').click(function() {
 		  
 		  var lwidth = '260px';
 		  if(jQuery(window).width() < 340) {
