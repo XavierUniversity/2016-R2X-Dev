@@ -1190,7 +1190,7 @@ ul.list-inline li { display: inline-block; margin: 0 5px 10px 0; }
 		  position: relative; margin-left: -42px; display: inline-block; padding: 15px 18px; font-size: 28px;
 		  background: #f7f7f7 url(../images/bg1.png); border: 2px solid #ccc; color: #666; float: left; 
 		  -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; }
-.timelinelist li .tl-icon .iconfa-picture { display: inline-block; margin: 2px 0; }
+.timelinelist li .tl-icon .fa fa-picture { display: inline-block; margin: 2px 0; }
 .timelinelist li .tl-post { margin-left: 50px; background: #fff; border: 1px solid #ccc; }
 .timelinelist li .tl-post textarea { margin: 0; height: auto; }
 .timelinelist li .tl-texta { padding: 15px; }
