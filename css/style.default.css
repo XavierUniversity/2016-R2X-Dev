@@ -302,8 +302,8 @@ h1,h2,h3,h4,h5 { font-weight: normal; line-height: normal; }
 .userlist-favorites li:hover { background: none; }
 .userlist-favorites li .link { font-size: 11px; margin-top: 7px; }
 .userlist-favorites li .link a { color: #666; display: inline-block; padding: 4px 5px; line-height: normal; }
-.userlist-favorites li .link a:last-child { background: #86c91d; color: #fff; }
-.userlist-favorites li .link a:first-child { background: #e9c72a; color: #fff; }
+.userlist-favorites li .link a:last-child { background: #0099cc; color: #fff; }
+.userlist-favorites li .link a:first-child { background: #0099cc; color: #fff; }
 .userlist-favorites li .link a:hover { text-decoration: none; color: #fff; }
 
 
