@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
 	// dropdown in leftmenu
 	jQuery('.leftmenu .dropdown > a').click(function(){
 		if(!jQuery(this).next().is(':visible'))
-			jQuery(this).next().slideDown('fast');
+			jQuery(this).next().slideDown('slow');
 		else
 			jQuery(this).next().slideUp('fast');	
 		return false;
@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
 	
 	
    // add menu bar for phones and tablet
-   jQuery('<div class="topbar"><div class="show-nav"><a id="nav-icon" href="#"><span></span><span></span><span></span><span></span></a></div>'+
+   jQuery('<div class="topbar"><div class="show-nav"><a id="nav-icon" href="#"><span></span><span></span><span></span><span></span></a></div><div><img src="images/logo.svg" class="img-centered"></div>'+
 		    '<div class="chatmenu"></a></div>').insertBefore('.mainwrapper');
 	
 	jQuery('.topbar .barmenu, #nav-icon').click(function() {
