@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<cfparam  name="application.bannerid" default="000300001">
+<cfparam  name="session.bannerid" default="000300001">
 
 <html>
 <head>
