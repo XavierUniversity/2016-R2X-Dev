@@ -27,28 +27,6 @@
      }
    </style>   
     
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
-
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/jquery-ui-1.10.3.min.js"></script>
-
-<script src="js/bootstrap.min.js"></script>
-<script src="js/modernizr.min.js"></script>
-<script src="js/jquery.cookies.js"></script>
-<script src="js/tinymce/jquery.tinymce.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/wysiwyg.js"></script>
-
-
-<!--[if lte IE 8]>
-<script src="js/excanvas.min.js"></script>
-<![endif]-->
-
 </head>
 
 <body>
@@ -616,6 +594,34 @@
     </div><!--rightpanel-->
     
 </div><!--mainwrapper-->
+
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.cookies.js"></script>
+<script src="js/tinymce/jquery.tinymce.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/wysiwyg.js"></script>
+
+
+<!--[if lte IE 8]>
+<script src="js/excanvas.min.js"></script>
+<![endif]-->
+
+
+
+
 <script type="text/javascript">
     jQuery(document).ready(function() {
         
