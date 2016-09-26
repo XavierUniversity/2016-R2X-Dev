@@ -51,18 +51,22 @@
 <body>
 
 
+<div class="topbar">
+		<div class="show-nav">
+			<a id="nav-icon" href="#">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+		
+		<img src="images/logo.svg" class="img-centered">
+</div>		    
+
+
 
 <div id="mainwrapper" class="mainwrapper">
-<!--
-    	    <div class="topbar">
-	    	    <div class="show-nav"><a id="nav-icon" href="#"><span></span><span></span><span></span><span></span></a> </div>
-	    	 
-	      </div>
--->
-
-
-
-
 
     <div class="header">
 	    
