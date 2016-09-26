@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<link rel="shortcut icon" href="favicon.ico" />
+<link rel="shortcut icon" href="favicon.ico" />
 
-	<title>Road to Xavier</title>
+<title>Road to Xavier</title>
 
-	<link rel="stylesheet" href="css/style.default.css" />
-	<link rel="stylesheet" href="css/responsive-tables.css">
+<link rel="stylesheet" href="css/style.default.css" />
+<link rel="stylesheet" href="css/responsive-tables.css">
     
-    
-	<!--- page variables ---> 
-	
-	 
-    
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	<!--[if lte IE 8]>
-		<script src="js/excanvas.min.js"></script>
-	<![endif]-->
-
-
   <style>
 	  
 	 .img-centered{display: block;
@@ -39,11 +22,35 @@
     
      
      }
-   </style> 
+   </style>   
+    
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.cookies.js"></script>
+<script src="js/tinymce/jquery.tinymce.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/wysiwyg.js"></script>
+
+
+<!--[if lte IE 8]>
+<script src="js/excanvas.min.js"></script>
+<![endif]-->
 
 </head>
 
 <body>
+
+
 
 <div class="topbar">
 		<div class="show-nav">
@@ -57,15 +64,17 @@
 		
 		<img src="images/logo.svg" class="img-centered">
 </div>		    
-		    
-		    
+
+
+
 <div id="mainwrapper" class="mainwrapper">
-    
-    
+
     <div class="header">
-              
+	    
+        <!--<div class="logo">
+            <a href="dashboard.html"><img src="images/logo.svg" alt="The Road to Xavier" /></a>
+        </div>-->
         <div class="headerinner">
-	        
             <ul class="headmenu">
                 <li class="odd">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -75,7 +84,11 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li class="nav-header">Messages</li>
-                        <li><a href=""><span class="fa fa-envelope"></span> New message from <strong>Jack</strong> <small class="muted"> - 19 hours ago</small></a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-envelope"></span> New message from <strong>Jack</strong> <small class="muted"> - 19 hours ago</small></a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-envelope"></span> New message from <strong>Daniel</strong> <small class="muted"> - 2 days ago</small></a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-envelope"></span> New message from <strong>Jane</strong> <small class="muted"> - 3 days ago</small></a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-envelope"></span> New message from <strong>Tanya</strong> <small class="muted"> - 1 week ago</small></a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-envelope"></span> New message from <strong>Lee</strong> <small class="muted"> - 1 week ago</small></a></li>
                         <li class="viewmore"><a href="messages.html">View More Messages</a></li>
                     </ul>
                 </li>
@@ -140,12 +153,8 @@
                         <li class="viewmore"><a href="charts.html">View More Statistics</a></li>
                     </ul>
                 </li>
-                
-                
-                
-                
                 <li class="right">
-                    <div class="userloggedinfo">
+                    <div class="userloggedinfo hidden-sm-down   hidden-sm-down">
                         <img src="images/photos/thumb1.png" alt="" />
                         <div class="userinfo">
                             <h5>Kristyn Hopson <small>- kristyn@hopson.com</small></h5>
@@ -157,20 +166,16 @@
                         </div>
                     </div>
                 </li>
-                
-                
-                
-                
             </ul><!--headmenu-->
         </div>
     </div>
+    
     
     <div class="leftpanel">
         
         <div class="leftmenu">        
             <ul class="nav nav-tabs nav-stacked">
             	<li class="nav-header">Navigation</li>
-            	 <li><a href="#"><span><img src="images/photos/thumb1.png" width="18px" alt=""></span> Kristyn Hopson</a></li>
                 <li><a href="#"><span class="fa fa-envelope fa-fw"></span> Inbox</a></li>
                 <li><a href="#"><span class="fa fa-road fa-fw"></span> Your Road to Xavier</a></li>
                 <li><a href="#"><span class="fa fa-pencil fa-fw"></span> Registration</a></li>
@@ -244,7 +249,8 @@
         </div><!--leftmenu-->
         
     </div><!-- leftpanel -->
-    
+
+        
     <div class="rightpanel">
         
         <ul class="breadcrumbs">
@@ -252,7 +258,6 @@
             <li>Home</li>
                  </ul>
         
-<!---
         <div class="pageheader">
             <form action="results.html" method="post" class="searchbar">
                 <input type="text" name="keyword" placeholder="To search type and hit enter..." />
@@ -263,55 +268,288 @@
                 <h1>The Road to Xavier</h1>
             </div>
         </div><!--pageheader-->
---->
         
         <div class="maincontent">
             <div class="maincontentinner">
-	            
                 <div class="row">
-	                
-	               
-	                
                     <div id="dashboard-left" class="col-md-8">
                         
+                        <h5 class="subtitle">Recently Viewed Pages</h5>
+                        <ul class="shortcuts">
+                            <li class="events">
+                                <a href="">
+                                    <span class="shortcuts-icon iconsi-event"></span>
+                                    <span class="shortcuts-label">Calendar</span>
+                                </a>
+                            </li>
+                            <li class="products">
+                                <a href="">
+                                    <span class="shortcuts-icon iconsi-cart"></span>
+                                    <span class="shortcuts-label">Products</span>
+                                </a>
+                            </li>
+                            <li class="archive">
+                                <a href="">
+                                    <span class="shortcuts-icon iconsi-archive"></span>
+                                    <span class="shortcuts-label">Archives</span>
+                                </a>
+                            </li>
+                            <li class="help">
+                                <a href="">
+                                    <span class="shortcuts-icon iconsi-help"></span>
+                                    <span class="shortcuts-label">Help</span>
+                                </a>
+                            </li>
+                            <li class="help">
+                                <a href="">
+                                    <span class="shortcuts-icon iconsi-help"></span>
+                                    <span class="shortcuts-label">Help</span>
+                                </a>
+                            </li>
+                            <li class="last images">
+                                <a href="">
+                                    <span class="shortcuts-icon iconsi-images"></span>
+                                    <span class="shortcuts-label">Images</span>
+                                </a>
+                            </li>
+                        </ul>
                         
-                       
-                          <div class="col-md-12">
-		               <h1>Title</h1>
-	               </div>    
+                        <br />
+                        
 
-              
+                        <!--<h5 class="subtitle">Daily Statistics</h5><br />
+                        <div id="chartplace" style="height:300px;"></div>
                         
-                        <h4 class="widgettitle"><span class="glyphicon glyphicon-comment glyphicon-white"></span>Page Header</h4>
-                      
+                        <div class="divider30"></div>
+                        
+                                               
+                        <br />-->
+                        
+                        <h4 class="widgettitle"><span class="glyphicon glyphicon-comment glyphicon-white"></span> Recent Activity</h4>
+                        <div class="widgetcontent nopadding">
+                            <ul class="commentlist">
+                                <li>
+                                    <img src="images/ambassador-OH.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Brian Moore</a> is now the Ambassador of Ohio.</h4>
+                                        <h5>Compare your badges with <a href="" style="color: #026f94">Brian's.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                               <li>
+                                    <img src="images/miniblueblob.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Dante Hamm</a>  is the new Mini Blue Blob.</h4>
+                                        <h5>Compare your badges with <a href="" style="color: #026f94">Dante's.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/expert.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">olden Graham</a> has earned the Expert badge. Way to go, Holden!</h4>
+                                        <h5>Compare your badges with <a href="" style="color: #026f94">Holden's.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                                     <li>
+                                    <img src="images/photos/thumb1.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Kristyn Hopson</a> has updated her profile.</h4>
+                                        <h5>Creep on <a href="" style="color: #026f94">Kristyn.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                                      <li>
+                                    <img src="images/ambassador-OH.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Brian Moore</a> is now the Ambassador of Ohio.</h4>
+                                        <h5>Compare your badges with <a href="" style="color: #026f94">Brian's.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                               <li>
+                                    <img src="images/miniblueblob.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Dante Hamm</a>  is the new Mini Blue Blob.</h4>
+                                        <h5>Compare your badges with <a href="" style="color: #026f94">Dante's.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/expert.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Holden Graham</a> has earned the Expert badge. Way to go, Holden!</h4>
+                                        <h5>Compare your badges with <a href="" style="color: #026f94">Holden's.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                                     <li>
+                                    <img src="images/photos/thumb1.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Kristyn Hopson</a> has updated her profile.</h4>
+                                        <h5>Creep on <a href="" style="color: #026f94">Kristyn.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                                      <li>
+                                    <img src="images/ambassador-OH.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Brian Moore</a> is now the Ambassador of Ohio.</h4>
+                                        <h5>Compare your badges with <a href="" style="color: #026f94">Brian's.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                               <li>
+                                    <img src="images/miniblueblob.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Dante Hamm</a>  is the new Mini Blue Blob.</h4>
+                                        <h5>Compare your badges with <a href="" style="color: #026f94">Dante's.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/expert.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Holden Graham</a> has earned the Expert badge. Way to go, Holden!</h4>
+                                        <h5>Compare your badges with <a href="" style="color: #026f94">Holden's.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                                     <li>
+                                    <img src="images/photos/thumb1.png" alt="" class="pull-left" />
+                                    <div class="comment-info">
+                                        <h4><a href="" style="color: #026f94">Kristyn Hopson</a> has updated her profile.</h4>
+                                        <h5>Creep on <a href="" style="color: #026f94">Kristyn.</a></h5>
+                                        <p></p>
+                                    </div>
+                                </li>
+                                <li><a href="">Load More</a></li>
+                            </ul>
+                        </div>
+                        
                         <br />
                         
                         
                     </div><!--col-md-8-->
                     
-                    
-			
-			<!---  right column --->
-			
                     <div id="dashboard-right" class="col-md-4">
                         
+                        <h5 class="subtitle">Your Next Step</h5>
                         
-<!---                         <h5 class="subtitle">Your Next Step</h5> --->
+                        <div class="divider15"></div>
                         
-<!---                         <div class="divider15"></div> --->
+                        <div class="alert alert-block">
+                              <!--<button data-dismiss="alert" class="close" type="button">&times;</button>-->
+                              <h4><span class="fa fa-exclamation-circle"></span> Complete the Transition to College Survey</h4>
+                              <p style="margin: 8px 0">Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna.</p>
+                        </div><!--alert-->
                         
-                       
-                       
-                       <cfinclude template="/includes/alertBox.cfm">                        
-                     
+                        <br />
                         
-                                              
+                        <h5 class="subtitle">Live on Campus</h5>
+                        <p>						<SCRIPT LANGUAGE="JavaScript">
+												// Set the BaseURL to the URL of your camera
+												var BaseURL = "http://webcam1.xu.edu/";
+												
+												// DisplayWidth & DisplayHeight specifies the displayed width & height of the image.
+												// You may change these numbers, the effect will be a stretched or a shrunk image
+												var DisplayWidth = "100%";
+												var DisplayHeight = "";
+												
+												// This is the path to the image generating file inside the camera itself
+												var File = "axis-cgi/mjpg/video.cgi?resolution=640x360&compression=30";
+												// No changes required below this point
+												var output = "";
+												
+												var useActiveX = false;
+												
+												<!--- detect older IE --->
+												if ( (navigator.appName == "Microsoft Internet Explorer") &&
+												   (navigator.platform != "MacPPC") && (navigator.platform != "Mac68k")){
+													useActiveX = true;
+												}
+												
+												<!--- detect IE11 --->
+												if (Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject) {
+												    useActiveX = true;
+												}
+												
+												if (useActiveX)
+												{
+												  // If Internet Explorer under Windows then use ActiveX 
+												  output  = '<div class="flex-video"><OBJECT ID="Player" width='
+												  output += DisplayWidth;
+												  output += ' height=';
+												  output += DisplayHeight;
+												  output += ' CLASSID="CLSID:DE625294-70E6-45ED-B895-CFFA13AEB044" ';
+												  output += 'CODEBASE="';
+												  output += BaseURL;
+												  output += 'activex/AMC.cab#version=3,32,14,0">';
+												  output += '<PARAM NAME="MediaURL" VALUE="';
+												  output += BaseURL;
+												  output += File + '">';
+												  output += '<param name="MediaType" value="mjpeg-unicast">';
+												  output += '<param name="ShowStatusBar" value="0">';
+												  output += '<param name="ShowToolbar" value="0">';
+												  output += '<param name="AutoStart" value="1">';
+												  output += '<param name="StretchToFit" value="1">';
+												  // Remove the '//' for the ptz settings below to use the code for click-in-image. 
+												     //  output += '<param name="PTZControlURL" value="';
+												     //  output += BaseURL;
+												     //  output += '/axis-cgi/com/ptz.cgi?camera=1">';
+												     //  output += '<param name="UIMode" value="ptz-relative">'; // or "ptz-absolute"
+												  output += '<BR><B>Axis Media Control</B><BR>';
+												  output += 'The AXIS Media Control, which enables you ';
+												  output += 'to view live image streams in Microsoft Internet';
+												  output += ' Explorer, could not be registered on your computer.';
+												  output += '<BR></OBJECT></div>';
+												} else {
+												  // If not IE for Windows use the browser itself to display
+												  theDate = new Date();
+												  output  = '<IMG SRC="';
+												  output += BaseURL;
+												  output += File;
+												  output += '&dummy=' + theDate.getTime().toString(10);
+												  output += '" HEIGHT="';
+												  output += DisplayHeight;
+												  output += '" WIDTH="';
+												  output += DisplayWidth;
+												  output += '" ALT="Video Stream">';
+												}
+												document.write(output);
+												document.Player.ToolbarConfiguration = "play,+snapshot,+fullscreen"
+												// document.Player.UIMode = "MDConfig";
+												// document.Player.MotionConfigURL = "/axis-cgi/operator/param.cgi?ImageSource=0"
+												// document.Player.MotionDataURL = "/axis-cgi/motion/motiondata.cgi";
+												</SCRIPT>
+							</p>
+
+                        
+                        <br />
+                        
+                        <h5 class="subtitle">Summaries</h5>
                             
-<!---                         <div class="divider15"></div> --->
+                        <div class="divider15"></div>
                         
-                      <cfinclude template="/includes/widget.cfm">                         
-                        
-                        
+                        <div class="widgetbox">                        
+                        <div class="headtitle">
+                            <div class="btn-group">
+                                <button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="widgettitle">Widget Box</h4>
+                        </div>
+                        <div class="widgetcontent">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div><!--widgetcontent-->
+                        </div><!--widgetbox-->
                         
                         <h4 class="widgettitle">Xavier Calendar</h4>
                         <div class="widgetcontent nopadding">
@@ -451,12 +689,9 @@
                     </div><!-- col-md-4 -->
                 </div><!--row-->
                 
-               <div class="maincontent">
-				
-				 <div class="maincontentinner">
-				 <!--- 	<div id='calendar'></div> --->
-                
-                
+                  <div class="maincontent">
+            <div class="maincontentinner">
+                <div id='calendar'></div>
                 
                 <div class="footer">
 	                <div class='row'>
@@ -475,7 +710,7 @@
 								<div class='adr'>
 									<span class='street-address'>3800 Victory Parkway</span>
 									<span class='locality'>Cincinnati</span>, <span class='region'>Ohio</span> <span class='postal-code'>45207</span>
-									<span class='tel'>877-XUADMIT</span>
+									<span class='tel'>513-745-3000</span>
 								</div>
 							</div>
 							<div class='copyright'>&copy; 2016 Xavier University. All rights reserved.</div>
@@ -489,23 +724,78 @@
     </div><!--rightpanel-->
     
 </div><!--mainwrapper-->
-
-
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/jquery-ui-1.10.3.min.js"></script>
-
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/modernizr.min.js"></script>
-<script src="js/jquery.cookies.js"></script>
-<script src="js/jquery.uniform.min.js"></script>
-<script src="js/flot/jquery.flot.min.js"></script>
-<script src="js/flot/jquery.flot.resize.min.js"></script>
-<script src="js/responsive-tables.js"></script>
-<script src="js/jquery.slimscroll.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/calendarScript.js"></script>
-
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        
+      /* simple chart
+		var flash = [[0, 11], [1, 9], [2,12], [3, 8], [4, 7], [5, 3], [6, 1]];
+		var html5 = [[0, 5], [1, 4], [2,4], [3, 1], [4, 9], [5, 10], [6, 13]];
+       var css3 = [[0, 6], [1, 1], [2,9], [3, 12], [4, 10], [5, 12], [6, 11]];
+			
+		function showTooltip(x, y, contents) {
+			jQuery('<div id="tooltip" class="tooltipflot">' + contents + '</div>').css( {
+				position: 'absolute',
+				display: 'none',
+				top: y + 5,
+				left: x + 5
+			}).appendTo("body").fadeIn(200);
+		}
+	
+			
+		var plot = jQuery.plot(jQuery("#chartplace"),
+			   [ { data: flash, label: "Flash(x)", color: "#6fad04"},
+              { data: html5, label: "HTML5(x)", color: "#06c"},
+              { data: css3, label: "CSS3", color: "#666"} ], {
+				   series: {
+					   lines: { show: true, fill: true, fillColor: { colors: [ { opacity: 0.05 }, { opacity: 0.15 } ] } },
+					   points: { show: true }
+				   },
+				   legend: { position: 'nw'},
+				   grid: { hoverable: true, clickable: true, borderColor: '#666', borderWidth: 2, labelMargin: 10 },
+				   yaxis: { min: 0, max: 15 }
+				 });
+		
+		var previousPoint = null;
+		jQuery("#chartplace").bind("plothover", function (event, pos, item) {
+			jQuery("#x").text(pos.x.toFixed(2));
+			jQuery("#y").text(pos.y.toFixed(2));
+			
+			if(item) {
+				if (previousPoint != item.dataIndex) {
+					previousPoint = item.dataIndex;
+						
+					jQuery("#tooltip").remove();
+					var x = item.datapoint[0].toFixed(2),
+					y = item.datapoint[1].toFixed(2);
+						
+					showTooltip(item.pageX, item.pageY,
+									item.series.label + " of " + x + " = " + y);
+				}
+			
+			} else {
+			   jQuery("#tooltip").remove();
+			   previousPoint = null;            
+			}
+		
+		});
+		
+		jQuery("#chartplace").bind("plotclick", function (event, pos, item) {
+			if (item) {
+				jQuery("#clickdata").text("You clicked point " + item.dataIndex + " in " + item.series.label + ".");
+				plot.highlight(item.series, item.datapoint);
+			}
+		});
+    	*/
+        
+        //datepicker
+        jQuery('#datepicker').datepicker();
+        
+        // tabbed widget
+        jQuery('.tabbedwidget').tabs();
+        
+        
+    
+    });
+</script>
 </body>
 </html>
