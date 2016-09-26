@@ -1996,7 +1996,7 @@ label.error {
 		  .rightpanel { margin-left: 0; width: 100%; }
 		  
 		  .topbar { display: block; background: #0c2340; height: 50px; 
-			  	background-image: url(../images/logo.svg);
+			  	/* 	background-image: url(../images/logo.svg); */
 			  	background-repeat: no-repeat;
 			  	background-position: center center;
 		  }
